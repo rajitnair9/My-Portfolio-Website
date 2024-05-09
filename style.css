@@ -10,10 +10,11 @@ background: linear-gradient(to bottom left, rgb(14, 32, 133), black);
 color: orange;
 }
 
+
 .content-container ,.intro{
 margin-right: 0;
 padding-right: 0;
-padding-bottom: 0.5em; 
+ 
 }
 
 .nav-container {
@@ -87,7 +88,7 @@ color: orange;
 }
 
 .intro {
-width:100%;
+width:fit-content;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -397,23 +398,22 @@ transform: scale(1.5);
     }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
 .body{
     width: 100%;
     background:rgb(14, 32, 133)
 }
-.content-container{
-    display:block;
-    width:100%;
-}
+
 .nav-container {
     display: none;
 }
 
-.intro {
+.intro  {
     margin: 1vh 0;
     flex-direction: column;
     align-items: center;
+    width:auto;
+   
 }
 .intro-text{
     margin-top: 0;
@@ -447,7 +447,7 @@ transform: scale(1.5);
     position: fixed;
     z-index: 99;
     top: 5%;
-    right: 8%;
+    right: 10%;
     margin-top: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
