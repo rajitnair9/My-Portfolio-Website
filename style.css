@@ -1,0 +1,534 @@
+
+body {
+margin: 0;
+padding: 0;
+
+font-family: "IBM Plex Sans", sans-serif;
+
+background: linear-gradient(to bottom left, rgb(14, 32, 133), black);
+color: orange;
+}
+
+.content-container {
+background: radial-gradient(to bottom right, indigo, white); 
+padding-bottom: 0.5em; 
+}
+
+.nav-container {
+position: fixed;
+top: 0;
+right: 0%;
+width: 100%;
+height: 10vh;
+padding: 1vh 1vh 1vh 1vh;
+text-align: right;
+font-size: 2vh;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+overflow: hidden;
+z-index: 1000;
+
+}
+
+.nav-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 0em 0em 0em 0em;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+z-index: -1;
+}
+
+.nav-container ul {
+list-style-type: none;
+display: inline-block;
+font-size: 2em;
+font-weight: bolder;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-container li {
+display: inline;
+margin-left: 5vw;
+margin-right: 5vw;
+}
+
+.nav-container li {
+transition: all 0.3s ease-in-out 1ms;
+}
+
+.nav-container li:hover {
+text-decoration: underline;
+text-decoration-color: darkgray;
+text-decoration-thickness: 0.1em;
+box-shadow: 0.1em 0.1em 0.1em 0em black;
+background-color: rgba(169, 169, 169, 0.1);
+backdrop-filter: blur(3em);
+padding: 0.3em 0.4em 0.3em 0.4em;
+border: 0.1em solid rgb(41, 41, 41);
+border-radius: 2em;
+color: orange;
+}
+
+.nav-container li a {
+text-decoration: none;
+color: orange;
+transition: all 0.3s ease-in-out 1ms;
+}
+
+.nav-container li a:hover {
+text-decoration: underline;
+text-decoration-color: darkgray;
+text-decoration-thickness: 0.1em;
+color: orange;
+}
+
+.intro {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 9vh 7vh 9vh 20vh;
+flex-direction: row;
+padding-top: 5vh;
+color:orange;
+
+}
+
+.intro div {
+font-family: 'Times New Roman', Times, serif;
+font-size: 5vh;
+text-align: left;
+padding: 3em ;
+border-radius: 10em;
+}
+
+.intro-text h3 {
+overflow: hidden;
+border-right: .15em solid orange;
+white-space:nowrap;
+margin: 2% auto;
+margin-bottom: 5%;
+letter-spacing: 0em;
+animation: 
+    typing 3.5s steps(55, end) infinite,
+    blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blink-caret {
+from 0%, to { border-color: transparent }
+50% { border-color: darkgoldenrod; }
+}
+
+.intro .myphoto {
+width: 22vw;
+height: 22vw;
+border-radius: 50%;
+margin-top: 10vh;
+}
+
+
+
+.resume-button {
+display: inline-block;
+background-color: transparent;
+padding: 1vh 2vw;
+border: 0.1em solid rgb(41, 41, 41);
+border-radius: 2em;
+color: orange;
+font-size: 1em;
+outline: none;
+box-shadow: 0.1em 0.1em 0.1em 0em black;
+background-color: rgba(255, 255, 255, 0.1);
+transition:all 0.3s ease-in-out 1ms;
+translate:0%;
+}
+
+.resume-button:hover {
+background-color: rgba(0, 0, 0, 0.1);
+cursor:pointer;
+translate:-7%;
+}
+
+.resume-button:active {
+background-color: rgba(255, 255, 255, 0.3);
+cursor:pointer;
+translate:2%;
+}
+
+.about-section {
+padding:4em 3em 3em 3em;
+text-align: center;
+}
+
+.about-section h1 {
+font-size: 2em;
+margin-bottom: 1em;
+color: orange;
+}
+
+.about-intro, .education, .experience, .skills {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 1.5em;
+border-radius: 10px;
+margin-bottom: 20px;
+width: 70%;
+margin: auto;
+}
+
+.about-intro p {
+font-size: 1.2em;
+margin: 0;
+
+}
+
+.education, .experience, .skills {
+margin-top: 20px;
+}
+.about-intro,.education, .experience, .skills {
+/* color:rgba(169, 169, 169, 0.9); */
+color:rgba(255, 255, 169, 0.9);
+}
+h2{
+color:orange;
+}
+
+.experience{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+overflow-x: auto;
+}
+
+.experience table {
+width: 100%;
+}
+
+.experience th,
+.experience td {
+padding: 0.3em 0.55em;
+}
+
+.education h2, .experience h2, .skills h2 {
+font-size: 1.5em;
+margin-bottom: 0.5em;
+/* color: white; */
+}
+
+.education ul, .experience ul, .skills ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.education li, .experience li, .skills li {
+font-size: 1.2em;
+color:rgba(255, 255, 169, 0.9);
+margin-bottom: 5px;
+text-align: left;
+list-style-type: circle;
+}
+
+.skills table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.skills th, .skills td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+
+.skills th {
+background-color: #f2f2f2;
+}
+
+.skills td:hover{
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu, .bar-icon {
+display: none;
+}
+
+
+.projects {
+padding: 3em;
+text-align: center;
+}
+
+.project {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2em;
+margin-top: 2em;
+}
+
+.project-item {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 1em;
+border-radius: 10px;
+color:rgba(255, 255, 169, 0.9);
+}
+
+.project-item img {
+max-width: 100%;
+border-radius: 10px;
+}
+
+.project-item h3 {
+margin-top: 0.5em;
+color:orange;
+}
+
+/* New styles for contact section */
+.contact {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 3em;
+text-align: center;
+margin-top: 3em;
+}
+
+.contact h2 {
+color:rgba(255, 255, 169, 0.9);
+}
+
+.contact-form {
+margin-top: 2em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+width: 100%;
+padding: 0.5em;
+margin-top: 1em;
+border: none;
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.5);
+color:rgba(255, 255, 169, 0.9);
+}
+
+.contact-form input[type="submit"] {
+background-color:orange;
+color:rgba(255, 255, 169, 0.9);
+font-weight: bold;
+border: none;
+padding: 0.5em 1.5em;
+margin-top:3vh;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+background-color: darkgray;
+}
+
+.contact-form ::placeholder{
+color:rgba(255, 255, 169, 0.9);
+font-weight: bold;
+font-style: italic;
+}
+.about-section {
+padding-top: 10vh; 
+}
+
+.projects {
+padding-top: 10vh; 
+}
+
+.contact {
+padding-top: 10vh; 
+}
+
+.logos {
+display: flex;
+padding: 2vh;
+margin-top: 3vh;
+justify-content: space-between;
+align-items: center; 
+}
+
+.logos button,
+.logos svg {
+margin: 0 1vw; 
+}
+
+.logos svg{
+width:5%;
+height:5%;
+
+color:orange;
+}
+
+.logos svg:hover{
+color:rgba(255, 255, 255, 0.6);
+transform: scale(1.5);
+}
+
+
+@media screen and (max-width: 768px) {
+.nav-container {
+    display: none;
+    width: 3em;
+    padding: 5vw;
+    font-size: 2vw;
+    text-align: left;
+    margin-right: 1em;
+}
+
+.intro {
+    margin: 1vh 0;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-text{
+    margin-top: 0;
+    padding-top:0;
+}
+
+.intro div {
+    font-size: 6vw;
+    text-align: center;
+    padding-top:1em;
+}
+
+.intro .myphoto {
+    width: 50vw;
+    height: 50vw;
+    margin-top: 0vh;
+}
+
+.dropdown-menu {
+    display: block;
+    position: relative;
+    display: inline-block;
+}
+.intro-text h1{
+    margin-top: 0;
+    padding-top:0;
+}
+.bar-icon {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0.7%; 
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+
+
+.bar-icon svg:hover {
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.intro-text h3 {
+    overflow: hidden;
+    white-space: wrap;
+    margin: 4% auto;
+    letter-spacing: 0em;
+    animation: none;
+    border:none;
+}
+
+.bar-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.bar-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bar-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: orange;
+    font-weight: bold;
+}
+
+.bar-content li a{
+    text-decoration: none;
+    display: block;
+    color: orange;
+    font-weight: bold;
+}
+
+.bar-content li:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.education,
+.skills,
+.about-intro {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding: 1.5em;
+}
+
+.experience{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+    padding:auto;
+}
+
+.experience table {
+    font-size: 0.8em;
+    border-collapse: collapse;
+}
+
+.experience th, .experience td {
+    padding: 5px 10px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+}
+.logos svg{
+    display: inline-block;
+    width:5vh;
+    height:5vh;
+    margin: 3vw;
+}
+}
+
+
+#scrollToTopBtn {
+display: none;
+position: fixed;
+bottom: 5%;
+right: 5%;
+z-index: 99;
+background-color: orange;
+color:rgba(255, 255, 169, 0.9);
+border: none;
+border-radius: 60%;
+padding: 0.5%;
+cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+background-color: #777;
+}
