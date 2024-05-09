@@ -376,13 +376,11 @@ transform: scale(1.5);
 
 
 @media screen and (max-width: 900px) {
+    .body{
+        width: 100%;
+    }
 .nav-container {
     display: none;
-    width: 3em;
-    padding: 5vw;
-    font-size: 2vw;
-    text-align: left;
-    margin-right: 1em;
 }
 
 .intro {
@@ -402,9 +400,9 @@ transform: scale(1.5);
 }
 
 .intro .myphoto {
-    width: 50vw;
-    height: 50vw;
-    margin-top: 0vh;
+    width: 60vw;
+    height: 60vw;
+    margin-top: 5vh;
 }
 
 .dropdown-menu {
