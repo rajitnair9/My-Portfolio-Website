@@ -548,7 +548,7 @@ transform: scale(1.5);
     display: none;
     position: fixed;
     bottom: 5%;
-    right: 10%;
+    right: 15%;
     z-index: 99;
     background-color: orange;
     color:rgba(255, 255, 169, 0.9);
