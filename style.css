@@ -6,11 +6,13 @@ padding: 0;
 font-family: "IBM Plex Sans", sans-serif;
 
 background: linear-gradient(to bottom left, rgb(14, 32, 133), black);
+
 color: orange;
 }
 
-.content-container {
-background: radial-gradient(to bottom right, indigo, white); 
+.content-container ,.intro{
+margin-right: 0;
+padding-right: 0;
 padding-bottom: 0.5em; 
 }
 
@@ -85,6 +87,7 @@ color: orange;
 }
 
 .intro {
+width:100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -203,7 +206,7 @@ color:orange;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-overflow-x: auto;
+overflow: hidden;
 }
 
 .experience table {
@@ -288,7 +291,7 @@ margin-top: 0.5em;
 color:orange;
 }
 
-/* New styles for contact section */
+
 .contact {
 background-color: rgba(255, 255, 255, 0.1);
 padding: 3em;
@@ -375,10 +378,34 @@ transform: scale(1.5);
 }
 
 
-@media screen and (max-width: 668px) {
-    .body{
-        width: 100%;
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    background-color: orange;
+    color:rgba(255, 255, 169, 0.9);
+    border: none;
+    border-radius: 60%;
+    padding: 0.5%;
+    cursor: pointer;
     }
+    
+    #scrollToTopBtn:hover {
+    background-color: #777;
+    }
+
+
+@media screen and (max-width: 1400px) {
+.body{
+    width: 100%;
+    background:rgb(14, 32, 133)
+}
+.content-container{
+    display:block;
+    width:100%;
+}
 .nav-container {
     display: none;
 }
@@ -418,18 +445,23 @@ transform: scale(1.5);
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 0;
-    right: 5%; 
-    margin-top: 3%;
-    margin-right: 5%;
+    z-index: 99;
+    top: 5%;
+    right: 8%;
+    margin-top: 0%;
+    margin-right: 0%;
     margin-bottom: 0%;
     padding-bottom: 0%;
+
+    transition: transform 0.3s ease;
+    
 }
 
 
 
 .bar-icon svg:hover {
-    background-color: rgba(0, 0, 0, 0.5);  
+    background-color: rgba(0, 0, 0, 0.5); 
+
 }
 
 .intro-text h3 {
@@ -446,6 +478,7 @@ transform: scale(1.5);
     position: absolute;
     background-color: #555;
     min-width: 160px;
+    margin-top: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -478,14 +511,14 @@ transform: scale(1.5);
 .education,
 .skills,
 .about-intro {
-    width: 90%;
+    width: auto;
     margin: auto;
     margin-bottom: 3%;
     padding: 1.5em;
 }
 
 .experience{
-    width: 90%;
+    width: auto;
     margin: auto;
     margin-bottom: 3%;
     padding:auto;
@@ -510,23 +543,20 @@ transform: scale(1.5);
     height:5vh;
     margin: 3vw;
 }
-}
-
 
 #scrollToTopBtn {
-display: none;
-position: fixed;
-bottom: 5%;
-right: 5%;
-z-index: 99;
-background-color: orange;
-color:rgba(255, 255, 169, 0.9);
-border: none;
-border-radius: 60%;
-padding: 0.5%;
-cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    z-index: 99;
+    background-color: orange;
+    color:rgba(255, 255, 169, 0.9);
+    border: none;
+    border-radius: 50%;
+    padding: 1%;
+    cursor: pointer;
+    }
 }
 
-#scrollToTopBtn:hover {
-background-color: #777;
-}
+
