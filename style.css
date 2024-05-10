@@ -490,7 +490,7 @@ transition:transform 0.5s;
     min-width: 160px;
     margin-top: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 99;
 }
 
 .bar-content ul {
@@ -540,7 +540,7 @@ transition:transform 0.5s;
 }
 
 .experience th, .experience td {
-    padding: 5px 10px;
+    padding: 1em 2em;
 }
 
 .project{
@@ -555,7 +555,8 @@ transition:transform 0.5s;
 }
 .tab{
     width: 10%;
-    height:10%
+    height:10%;
+    padding-left: 5%;
 }
 
 #scrollToTopBtn {
