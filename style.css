@@ -10,6 +10,10 @@ background: linear-gradient(to bottom left, rgb(14, 32, 133), black);
 color: orange;
 }
 
+.fon{
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
 
 .content-container ,.intro{
 margin-right: 0;
@@ -48,7 +52,7 @@ list-style-type: none;
 display: inline-block;
 font-size: 2em;
 font-weight: bolder;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: "IBM Plex Sans", sans-serif;
 }
 
 .nav-container li {
@@ -184,6 +188,7 @@ border-radius: 10px;
 margin-bottom: 20px;
 width: 70%;
 margin: auto;
+
 }
 
 .about-intro p {
@@ -198,6 +203,10 @@ margin-top: 20px;
 .about-intro,.education, .experience, .skills {
 /* color:rgba(169, 169, 169, 0.9); */
 color:rgba(255, 255, 169, 0.9);
+}
+
+.about-intro:hover, .education:hover, .experience:hover, .skills:hover,.project-item:hover{
+    box-shadow: 0em 0em 1em 0.5em rgba(0, 0, 0, 0.5);
 }
 h2{
 color:orange;
@@ -333,7 +342,7 @@ transition: background-color 0.3s;
 }
 
 .contact-form input[type="submit"]:hover {
-background-color: darkgray;
+background-color: rgba(255, 255, 255, 0.3);
 }
 
 .contact-form ::placeholder{
@@ -374,8 +383,9 @@ color:orange;
 }
 
 .logos svg:hover{
-color:rgba(255, 255, 255, 0.6);
+color:rgba(255, 255, 169, 0.7);
 transform: scale(1.5);
+transition:transform 0.5s;
 }
 
 
@@ -388,13 +398,13 @@ transform: scale(1.5);
     background-color: orange;
     color:rgba(255, 255, 169, 0.9);
     border: none;
-    border-radius: 60%;
+    border-radius: 85%;
     padding: 0.5%;
     cursor: pointer;
     }
     
     #scrollToTopBtn:hover {
-    background-color: #777;
+    background-color: rgba(169, 169, 169, 0.3);
     }
 
 
