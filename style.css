@@ -553,6 +553,10 @@ transition:transform 0.5s;
     height:5vh;
     margin: 3vw;
 }
+.tab{
+    width: fit-content;
+    height:fit-content;
+}
 
 #scrollToTopBtn {
     display: none;
