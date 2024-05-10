@@ -216,7 +216,7 @@ color:orange;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-overflow: hidden;
+overflow: auto;
 }
 
 .experience table {
@@ -554,8 +554,8 @@ transition:transform 0.5s;
     margin: 3vw;
 }
 .tab{
-    width: fit-content;
-    height:fit-content;
+    width: 10%;
+    height:10%
 }
 
 #scrollToTopBtn {
