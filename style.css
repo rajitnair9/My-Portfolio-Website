@@ -534,14 +534,17 @@ transition:transform 0.5s;
     padding:auto;
 }
 
+
 .experience table {
-    font-size: 0.8em;
+    font-size: 0.6em; /* Adjust font size for very small */
     border-collapse: collapse;
 }
 
 .experience th, .experience td {
-    padding: 1em 2em;
+    padding: 0.2em; /* Adjust padding for very small */
 }
+
+
 
 .project{
     display: flex;
@@ -556,7 +559,6 @@ transition:transform 0.5s;
 .tab{
     width: 10%;
     height:10%;
-    padding-left: 5%;
 }
 
 #scrollToTopBtn {
